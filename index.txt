@@ -1,8 +1,8 @@
-SEGUIR EN 19:43
+SEGUIR EN 42:32
 
 Jack - personal portfolio
 
-# HEDER
+# HEADER
 
 Jack.
 
@@ -21,9 +21,11 @@ Skills.
 Portfolio.
 Contact.
 
-
-
 # HERO
+
+hero-banner.png    > 1309x1109
+hero-banner-md.png > 800x678
+hero-banner-sm.png > 500x424
 
 alt = A man in a blue shirt with a happy expression
 
