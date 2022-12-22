@@ -12,7 +12,8 @@
 
 :root {
   /* color palette */
-  --raw-seinna: hsl(24, 74%, 58%);
+  /*--raw-seinna: hsl(24, 74%, 58%);*/
+  --raw-seinna: #d90429;
   --sizzling-sunrise: hsl(51, 95%, 54%);
   --scarlet: hsl(13, 96%, 47%);
   --black: hsl(0, 0%, 0%);
@@ -211,8 +212,6 @@ body.active { overflow: hidden; }
   background: var(--color-secondary);
 }
 
-/* hasta acá */
-
 .section-title {
   max-width: 350px;
   margin-bottom: 30px;
@@ -223,6 +222,8 @@ body.active { overflow: hidden; }
   line-height: 1.8;
   margin-bottom: 30px;
 }
+
+/* hasta acá */
 
 .tooltip {
   position: absolute;
