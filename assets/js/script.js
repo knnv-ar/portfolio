@@ -26,3 +26,19 @@ navToggleBtn.addEventListener("click", function () {
   elemToggleFunc(navbar);
   elemToggleFunc(document.body);
 });
+
+//skills toggle
+
+const toggleBtnBox = document.querySelector("[data-toggle-box]");
+const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
+const skillsBox = document.querySelector("[data-skills-box]");
+
+for (let i = 0; i < toggleBtns.length; i++) {
+  toggleBtns[i].addEventListener("click", function () {
+    elemToggleFunc(toggleBtnBox);
+
+    for (i = 0; i < toggleBtnBox.length; i++) { elemToggleFunc[i]; }
+
+    elemToggleFunc(skillsBox);
+  });
+}
