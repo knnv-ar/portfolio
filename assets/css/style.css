@@ -608,3 +608,19 @@ main { overflow-x: hidden; }
   opacity: 1;
 }
 
+/*-----------------------------------*\
+ * projects
+\*-----------------------------------*/
+
+.project { padding-block: var(--section-padding); }
+
+.project-list > li { margin-bottom: 25px; }
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-12);
+  box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+SEGUIR EN 1:08:20
