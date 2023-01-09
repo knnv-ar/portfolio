@@ -89,6 +89,10 @@ Download cv
 
 My skills
 
+dreyfus skill model: novice | advanced beginner | competent | proficient | expert
+
+other: novice | beginner | Intermediate | Advanced | Expert
+
 What My Programming Skills Included?
 
 I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.

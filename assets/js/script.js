@@ -38,10 +38,9 @@ const skillsBox = document.querySelector("[data-skills-box]");
 
 for (let i = 0; i < toggleBtns.length; i++) {
   toggleBtns[i].addEventListener("click", function () {
+
     elemToggleFunc(toggleBtnBox);
-
-    for (let i = 0; i < toggleBtnBox.length; i++) { elemToggleFunc[i]; }
-
+    for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
     elemToggleFunc(skillsBox);
   });
 }
