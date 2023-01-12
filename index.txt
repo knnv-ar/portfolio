@@ -1,6 +1,16 @@
 SEGUIR EN 1:39:45
 
-seinna
+## Color pallete:
+
+#d90429	dark red
+
+#ef233c	bright red
+
+#edf2f4	light grey
+
+#8d99ae	mid grey
+
+#2b2d42	dark grey
 
 Jack - personal portfolio
 
@@ -28,6 +38,8 @@ Contact.
 hero-banner.png    > 1309x1109
 hero-banner-md.png > 800x678
 hero-banner-sm.png > 500x424
+
+about-banner.png > 592x624
 
 alt = A man in a blue shirt with a happy expression
 
