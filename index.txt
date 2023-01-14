@@ -4,6 +4,8 @@ SEGUIR EN 1:39:45
 
 #6b0214 really dark red
 
+#d90b2b logo dark red
+
 #d90429	dark red
 
 #ef233c	bright red

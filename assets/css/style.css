@@ -851,7 +851,9 @@ textarea.input-field {
  * #MEDIA QUERIES
 \*-----------------------------------*/
 
+/********************************************/
 /* responsive for screens larger than 550px */
+/********************************************/
 
 @media (min-width: 550px) {
 
@@ -874,7 +876,9 @@ textarea.input-field {
   .project-list > li:first-child { column-span: all; }
 }
 
+/********************************************/
 /* responsive for screens larger than 768px */
+/********************************************/
 
 @media (min-width: 768px) {
 
@@ -908,7 +912,9 @@ textarea.input-field {
   }
 }
 
+/********************************************/
 /* responsive for screens larger than 992px */
+/********************************************/
 
 @media (min-width: 992px) {
 
@@ -920,7 +926,7 @@ textarea.input-field {
     --fs-2: 3rem;
 
     /* spacing */
-    --section-padding: 100px;
+    --section-padding: 80px;
   }
 
 
@@ -1135,7 +1141,9 @@ textarea.input-field {
   .footer .logo { margin-bottom: 0; }
 }
 
+/*********************************************/
 /* responsive for screens larger than 1200px */
+/*********************************************/
 
 @media (min-width: 1200px) {
   /* reused style */
