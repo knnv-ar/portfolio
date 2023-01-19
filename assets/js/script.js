@@ -27,7 +27,10 @@ const navbar = document.querySelector("[data-navbar]");
 navToggleBtn.addEventListener("click", function () {
   elemToggleFunc(navToggleBtn);
   elemToggleFunc(navbar);
+  // TO-DO: closing navbar after link click
+  // navbar.classList.remove("active");
   elemToggleFunc(document.body);
+
 });
 
 //skills toggle

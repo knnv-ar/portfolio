@@ -368,14 +368,14 @@ body.active { overflow: hidden; }
   place-items: center;
   visibility: hidden;
   transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
   z-index: 1;
 }
 
 .navbar.active {
   top: 0;
   visibility: visible;
-  transition-delay: 0s;
+  transition-delay: 0.2s;
 }
 
 .navbar-list > li {
