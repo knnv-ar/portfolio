@@ -1,11 +1,9 @@
 'use strict';
 
 // element toggle function
-
 const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 //header sticky & go top
-
 const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
 
@@ -20,21 +18,16 @@ window.addEventListener("scroll", function () {
 });
 
 //navbar toggle
-
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
 
 navToggleBtn.addEventListener("click", function () {
   elemToggleFunc(navToggleBtn);
   elemToggleFunc(navbar);
-  // TO-DO: closing navbar after link click
-  // navbar.classList.remove("active");
   elemToggleFunc(document.body);
-
 });
 
 //skills toggle
-
 const toggleBtnBox = document.querySelector("[data-toggle-box]");
 const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
 const skillsBox = document.querySelector("[data-skills-box]");
@@ -49,7 +42,6 @@ for (let i = 0; i < toggleBtns.length; i++) {
 }
 
 //dark & light theme toggle
-
 const themeToggleBtn = document.querySelector("[data-theme-btn]");
 
 themeToggleBtn.addEventListener("click", function () {
@@ -67,7 +59,6 @@ themeToggleBtn.addEventListener("click", function () {
 });
 
 //check & aplly last time selected theme from localStorage
-
 if (localStorage.getItem("theme") === "light_theme") {
   themeToggleBtn.classList.add("active");
   document.body.classList.remove("dark_theme");
@@ -76,4 +67,13 @@ if (localStorage.getItem("theme") === "light_theme") {
   themeToggleBtn.classList.remove("active");
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
+}
+
+//close navbar
+function closeNavbar() {
+  const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+  const navbar = document.querySelector("[data-navbar]");
+
+  navToggleBtn.classList.remove("active");
+  navbar.classList.remove("active");
 }
