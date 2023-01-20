@@ -73,7 +73,9 @@ if (localStorage.getItem("theme") === "light_theme") {
 function closeNavbar() {
   const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
   const navbar = document.querySelector("[data-navbar]");
+  const top = document.getElementById("top");
 
   navToggleBtn.classList.remove("active");
   navbar.classList.remove("active");
+  top.classList.toggle("active");
 }
