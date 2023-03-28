@@ -1,5 +1,7 @@
 # Raúl Federico Lacabanne | Responsive portfolio
 
+![Responsive personal portfolio](./assets/image/img-portfolio.png)
+
 Based on "Creative Personal Portfolio Using HTML CSS Javascript"
 
 URL: https://youtu.be/DdlVKS7MROY
