@@ -116,7 +116,7 @@ Highlights key experience numbers:
     *   *La ciudad en.red.ada*
 
 ### 7. Contact Section (`#contact`)
-*   Contact Info panel containing Location (Buenos Aires, Argentina), Phone number (`+54 9 11 3267 1757`), and links to profiles.
+*   Contact Info panel containing Location (Buenos Aires, Argentina), Phone number (`+54 9 11 5335 5152`), and links to profiles.
 *   Form connected to **FormSubmit** API endpoint (`https://formsubmit.co/360947ae96a5da66bb47b6d054a95104`) with subject value `"New contacto KNNV!"`.
 
 ---
