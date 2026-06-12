@@ -127,9 +127,9 @@ All custom interactions are managed in [assets/js/script.js](file:///D:/code/por
 
 ### Main Functions and Event Listeners
 
-1.  **Toggle Utility Function**:
+1.  **Toggle Utility Helper**:
     ```javascript
-    const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
+    const toggleActive = (elem) => elem.classList.toggle("active");
     ```
     Toggles the `.active` class dynamically.
 
@@ -141,30 +141,37 @@ All custom interactions are managed in [assets/js/script.js](file:///D:/code/por
 3.  **Navbar Toggle**:
     Allows responsive toggling of mobile navigation menu. Prevents main body scrolling by toggling `active` class on the body.
     ```javascript
-    navToggleBtn.addEventListener("click", function () {
-      elemToggleFunc(navToggleBtn);
-      elemToggleFunc(navbar);
-      elemToggleFunc(document.body);
+    navToggleBtn.addEventListener("click", () => {
+      toggleActive(navToggleBtn);
+      toggleActive(navbar);
+      toggleActive(body);
     });
     ```
 
 4.  **Skills/Tools Tabs Switching**:
-    Listens to changes in the toggle buttons, shifting the layout to show either the languages or tools listing.
+    Listens to changes in the toggle buttons, shifting the layout to show either the languages or tools listing. It prevents duplicate toggling if the clicked tab is already active.
     ```javascript
-    for (let i = 0; i < toggleBtns.length; i++) {
-      toggleBtns[i].addEventListener("click", function () {
-        elemToggleFunc(toggleBtnBox);
-        for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
-        elemToggleFunc(skillsBox);
+    toggleBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (btn.classList.contains("active")) return;
+        toggleActive(toggleBtnBox);
+        toggleActive(skillsBox);
+        toggleBtns.forEach((tab) => toggleActive(tab));
       });
-    }
+    });
     ```
 
 5.  **Dark/Light Mode persistence**:
     Theme state is stored in the browser's `localStorage` as `"theme"`.
-    *   On load, reads `localStorage.getItem("theme")`.
-    *   Sets proper class on `body` (`.dark_theme` vs `.light_theme`) and aligns toggle button active states.
-    *   Toggling writes the update directly back to storage.
+    *   On load, reads `localStorage.getItem("theme")` (defaults to `"dark_theme"`).
+    *   Uses a unified `applyTheme()` helper function to apply the class list adjustments and save state.
 
 6.  **Navbar Auto-Close**:
-    Nav link clicks invoke `closeNavbar()` to close navigation drawer automatically on click selection.
+    Nav link clicks invoke the globally exposed `closeNavbar()` function, which explicitly removes the `.active` class from the header elements and body scroll-lock.
+    ```javascript
+    const closeNavbar = () => {
+      navToggleBtn.classList.remove("active");
+      navbar.classList.remove("active");
+      body.classList.remove("active");
+    };
+    ```
